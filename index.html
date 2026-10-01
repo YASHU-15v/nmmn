@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nammaweb - Luxury Online Course: 15 Days Immersion to 3-Month Internship. High-level training and direct mentorship.">
+    <title>Nammaweb | Elite Tech Internship & Training</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts for Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        dark: '#111111',
+                        light: '#F8F8F8'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Floating WhatsApp Button Animation */
+        .whatsapp-float {
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Luxury Underline Effect */
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #D4AF37;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark antialiased">
+
+    <!-- Header Navigation -->
+    <nav class="bg-white border-b border-gray-200 fixed w-full z-50 top-0 transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Brand -->
+                <div class="flex items-center gap-3">
+                    <img src="logo.png" alt="Nammaweb Logo" class="h-10 w-auto object-contain" onerror="this.src='https://via.placeholder.com/150x50?text=NAMMAWEB'">
+                    <span class="font-serif text-2xl font-bold tracking-wider">NAMMAWEB</span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm tracking-widest uppercase hover-underline-animation">The Program</a>
+                    <a href="#booking" class="text-sm tracking-widest uppercase hover-underline-animation">Booking</a>
+                    <a href="#insights" class="text-sm tracking-widest uppercase hover-underline-animation">Insights</a>
+                    <span class="text-sm font-medium border-l border-gray-300 pl-8 flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-gold"></i> info@nammaweb.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center justify-center min-h-[90vh] bg-dark text-white">
+        <!-- Subtle background pattern/overlay for luxury feel -->
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/80 to-dark"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+            <p class="text-gold uppercase tracking-[0.3em] text-sm md:text-base font-semibold mb-6">Exclusive Career Transformation</p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8">
+                15 Days Immersion to <br> <span class="italic font-light">3-Month Internship.</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Experience high-level training, build a live project portfolio, and receive direct mentorship from industry elite. Elevate your trajectory today.
+            </p>
+            <a href="#booking" class="inline-block bg-gold text-dark px-10 py-4 font-bold tracking-widest uppercase text-sm hover:bg-white transition-colors duration-300 border border-gold hover:border-white">
+                Reserve Your Seat
+            </a>
+        </div>
+    </header>
+
+    <!-- The Program Features -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl font-bold mb-4">The Nammaweb Standard</h2>
+                <div class="h-1 w-16 bg-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-6 border border-gray-200">
+                        <i class="fa-solid fa-code text-2xl text-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-3">Live Project Portfolio</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">Don't just learn theory. Build real-world, high-end applications that stand out to premium tech recruiters globally.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-6 border border-gray-200">
+                        <i class="fa-solid fa-user-tie text-2xl text-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-3">Direct Mentorship</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">Gain exclusive 1-on-1 access to senior developers. We guide your architecture, code quality, and career strategy.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-6 border border-gray-200">
+                        <i class="fa-solid fa-gem text-2xl text-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-3">High-Level Training</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">Master the modern tech stack with our intense 15-day immersion, setting the foundation for your 3-month internship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-24 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl font-bold mb-4">Select Your Journey</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto font-light">Secure your enrollment. All bookings are processed securely via our internal registry.</p>
+                <div class="h-1 w-16 bg-gold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- 30 Days -->
+                <div class="bg-white p-10 border border-gray-200 hover:border-gold transition-colors duration-300 group flex flex-col">
+                    <h3 class="text-gray-500 uppercase tracking-widest text-sm font-semibold mb-2">Foundation</h3>
+                    <div class="font-serif text-3xl font-bold mb-6">30 Days</div>
+                    <div class="text-4xl font-bold mb-6">₹14,999</div>
+                    <ul class="text-gray-600 font-light mb-8 space-y-3 flex-grow">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Core Fundamentals</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> 1 Live Project</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Group Mentorship</li>
+                    </ul>
+                    <a href="https://docs.google.com/spreadsheets/d/1zT92gLs6yLXlXxvjcSQ9EjtKokhRextWha-Nh95ry48/edit?usp=drive_link" target="_blank" class="block text-center border border-dark text-dark py-3 uppercase tracking-wider text-sm font-semibold group-hover:bg-dark group-hover:text-white transition-all">Book Now</a>
+                </div>
+
+                <!-- 60 Days -->
+                <div class="bg-dark text-white p-10 relative transform md:-translate-y-4 flex flex-col shadow-2xl">
+                    <div class="absolute top-0 right-0 bg-gold text-dark text-xs font-bold px-3 py-1 uppercase tracking-wider">Most Popular</div>
+                    <h3 class="text-gray-400 uppercase tracking-widest text-sm font-semibold mb-2">Accelerator</h3>
+                    <div class="font-serif text-3xl font-bold mb-6 text-gold">60 Days</div>
+                    <div class="text-4xl font-bold mb-6">₹24,999</div>
+                    <ul class="text-gray-300 font-light mb-8 space-y-3 flex-grow">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Full Stack Mastery</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> 2 Live Projects</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> 1-on-1 Mentorship</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Resume Optimization</li>
+                    </ul>
+                    <a href="https://docs.google.com/spreadsheets/d/1zT92gLs6yLXlXxvjcSQ9EjtKokhRextWha-Nh95ry48/edit?usp=drive_link" target="_blank" class="block text-center bg-gold text-dark border border-gold py-3 uppercase tracking-wider text-sm font-semibold hover:bg-white transition-all">Book Now</a>
+                </div>
+
+                <!-- 125 Days -->
+                <div class="bg-white p-10 border border-gray-200 hover:border-gold transition-colors duration-300 group flex flex-col">
+                    <h3 class="text-gray-500 uppercase tracking-widest text-sm font-semibold mb-2">Elite Internship</h3>
+                    <div class="font-serif text-3xl font-bold mb-6">125 Days</div>
+                    <div class="text-4xl font-bold mb-6">₹49,999</div>
+                    <ul class="text-gray-600 font-light mb-8 space-y-3 flex-grow">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Complete Immersion</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Live Client Portfolio</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Direct CTO Mentorship</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Guaranteed Placement Assistance</li>
+                    </ul>
+                    <a href="https://docs.google.com/spreadsheets/d/1zT92gLs6yLXlXxvjcSQ9EjtKokhRextWha-Nh95ry48/edit?usp=drive_link" target="_blank" class="block text-center border border-dark text-dark py-3 uppercase tracking-wider text-sm font-semibold group-hover:bg-dark group-hover:text-white transition-all">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Blog Section -->
+    <section id="insights" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="font-serif text-4xl font-bold mb-4">Industry Insights</h2>
+                    <div class="h-1 w-16 bg-gold"></div>
+                </div>
+                <a href="#" class="hidden md:inline-block text-sm uppercase tracking-widest font-semibold hover-underline-animation">View All Journal Entries</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- SEO Blog Post 1 -->
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden mb-6 bg-gray-100 aspect-video">
+                        <!-- Placeholder for high quality image -->
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Code on screen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-gold text-xs font-bold uppercase tracking-widest mb-3">Development</p>
+                    <h3 class="font-serif text-xl font-bold mb-3 group-hover:text-gold transition-colors">Why a Live Portfolio is Better Than a Resume</h3>
+                    <p class="text-gray-500 font-light text-sm line-clamp-3">In today's competitive tech landscape, showing is infinitely more powerful than telling. Discover why high-level recruiters look for deployed projects over lists of skills.</p>
+                </article>
+
+                <!-- SEO Blog Post 2 -->
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden mb-6 bg-gray-100 aspect-video">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" alt="Team collaborating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-gold text-xs font-bold uppercase tracking-widest mb-3">Mentorship</p>
+                    <h3 class="font-serif text-xl font-bold mb-3 group-hover:text-gold transition-colors">The Value of Direct Mentorship in Tech</h3>
+                    <p class="text-gray-500 font-light text-sm line-clamp-3">Navigating a 3-month internship requires more than just Google. Learn how elite 1-on-1 guidance dramatically accelerates your growth trajectory as a developer.</p>
+                </article>
+
+                <!-- SEO Blog Post 3 -->
+                <article class="group cursor-pointer hidden lg:block">
+                    <div class="overflow-hidden mb-6 bg-gray-100 aspect-video">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Analytics and growth" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-gold text-xs font-bold uppercase tracking-widest mb-3">Career Strategy</p>
+                    <h3 class="font-serif text-xl font-bold mb-3 group-hover:text-gold transition-colors">From 15 Days Immersion to Full-Time Role</h3>
+                    <p class="text-gray-500 font-light text-sm line-clamp-3">A step-by-step blueprint on converting an intensive tech internship program into a high-paying, full-time senior engineering position.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-6">
+                    <!-- Footer Logo (using the same logo.png) -->
+                    <img src="logo.png" alt="Nammaweb Logo" class="h-8 w-auto filter brightness-0 invert opacity-80" onerror="this.style.display='none'">
+                    <span class="font-serif text-2xl font-bold tracking-wider">NAMMAWEB</span>
+                </div>
+                <p class="text-gray-400 font-light text-sm mb-4">Elevating tech careers through immersive training and elite internships.</p>
+            </div>
+            <div class="flex flex-col space-y-3">
+                <h4 class="text-gold uppercase tracking-widest text-sm font-bold mb-4">Connect</h4>
+                <a href="mailto:info@nammaweb.com" class="text-gray-400 hover:text-white transition-colors text-sm">info@nammaweb.com</a>
+                <a href="https://wa.me/917204248002" target="_blank" class="text-gray-400 hover:text-white transition-colors text-sm">+91 7204248002</a>
+            </div>
+            <div class="flex flex-col space-y-3">
+                <h4 class="text-gold uppercase tracking-widest text-sm font-bold mb-4">Legal</h4>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-gray-800 text-center">
+            <p class="text-gray-600 text-xs tracking-widest uppercase">&copy; 2026 Nammaweb. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Front-End WhatsApp Floating Widget -->
+    <!-- Directs to front end whatsapp number: 7204248002 -->
+    <a href="https://wa.me/917204248002" target="_blank" class="whatsapp-float fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl z-50 cursor-pointer" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
